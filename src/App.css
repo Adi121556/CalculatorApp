@@ -1,0 +1,114 @@
+/* Full screen background and centering */
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1e1e2f, #2d2d3a);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
+
+/* Calculator container */
+.calculator {
+  background: #1a1a2e;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Heading */
+.calculator h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Input display */
+.calculator input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background: #333;
+  color: #fff;
+  text-align: right;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Grid buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* General button style */
+button {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #3e3e55;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+button:hover {
+  background: #5a5a85;
+  transform: scale(1.05);
+}
+
+/* Special buttons */
+button.clear {
+  background: #ff4d4d;
+}
+
+button.clear:hover {
+  background: #ff1a1a;
+}
+
+button.equal {
+  background: #00cc99;
+}
+
+button.equal:hover {
+  background: #00b386;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .calculator {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .calculator input {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}
+/* Yeh body ko full screen aur center banayega */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #222; /* dark background jaise image me */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
